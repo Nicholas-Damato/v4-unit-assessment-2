@@ -172,8 +172,8 @@ const classes = [
 
 for(let i = 0; i < classes.length; i++){
     for(let key in classes){
-        if(key[i] === true){
-             key[i]  = false
+      if(classes[i].key === true){
+            key = false
         }
     }
 }
@@ -194,7 +194,7 @@ let pairsArray = []
 for(let i = 0; i < lettersToPair.length; i++){
     for(let j = i + 1; j < lettersToPair.length; j++){
         if(lettersToPair[i] === lettersToPair[j]){
-           pairsArray.push(lettersToPair[j])
+           pairsArray.push([i,j])
         }
     }
 }

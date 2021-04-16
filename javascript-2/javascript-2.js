@@ -83,7 +83,8 @@ const products = [
 */
 
 let saleProducts = products.map((e) =>{
-  return e.price - (e.price * .25)
+  // return e.price - (e.price * .25)
+  return {...e, price: e.price - (e.price * .25)}
 })
 
 ////////////////////PROBLEM 3////////////////////
