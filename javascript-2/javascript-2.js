@@ -292,7 +292,7 @@ let person = {
     book: 'Words of Radiance'
   },
   kids: [{
-      name: 'Luca',
+      name: 'Cereza',
       age: 17
     },{
       name:'Nicholas',
