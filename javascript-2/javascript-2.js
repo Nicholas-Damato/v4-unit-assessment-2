@@ -289,7 +289,8 @@ let person = {
   favorites: {
     color: 'Yellow',
     number: 7,
-    book: 'Words of Radiance',},
+    book: 'Words of Radiance'
+  },
   kids: [{
       name: 'Luca',
       age: 17
