@@ -83,11 +83,10 @@ const products = [
 */
 
 let saleProducts = products.map((e) =>{
-  // return e.price - (e.price * .25)
   return {...e, price: e.price - (e.price * .25)}
 })
 
-const saleProducts = products.map((e) => ({...e, price: e.price * .75}))
+// const saleProducts = products.map((e) => ({...e, price: e.price * .75}))
 // the parenthesis around the curly braces says that this is an object for the implicit return not for the function
 
 
@@ -279,7 +278,7 @@ const commenterId = userInfo.comments[1].responses[0].userId
 let person = {
   name: 'Nick',
   age: 22,
-  jobs: ['Casheir','CSS','Web Developer'],
+  jobs: ['Cashier','CSS','Web Developer'],
   birthday: function(){
     return this.age++
   },
