@@ -87,6 +87,19 @@ let saleProducts = products.map((e) =>{
   return {...e, price: e.price - (e.price * .25)}
 })
 
+const saleProducts = products.map((e) => ({...e, price: e.price * .75}))
+// the parenthesis around the curly braces says that this is an object for the implicit return not for the function
+
+
+// const saleProducts = products.map((e)=>{
+//   const newObj = {
+//     name: e.name,
+//     color: e.color,
+//     price: e.price - (e.price * .25)
+//   }
+//   return newObj
+// })
+
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -95,7 +108,7 @@ let saleProducts = products.map((e) =>{
   (Hint: look up the array method 'includes' on MDN)
 */
 
-let blueProducts = products.filter((e)=>{
+let blueProducts = saleProducts.filter((e)=>{
   if(e.color.includes('blue')){
     return e
   }

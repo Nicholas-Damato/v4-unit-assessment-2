@@ -174,15 +174,12 @@ const classes = [
 // I have no idea how to do it with a for in loop... It's just there to fill jasemine at this point
 
 for(let i = 0; i < classes.length; i++){
-    for(let key in classes){
-      if(classes[i].homework === true){
-           classes[i].homework = false
-        }
+    for(let key in classes[i]){                              //needs the index
+      if(classes[i][key] === true){                         // use square bracket notation with for in loops
+        classes[i][key] = false             
+      }
     }
-    if(classes[i].inPerson === true){
-          classes[i].inPerson = false
-    }
-}
+  }
   
 ////////////////////PROBLEM 10////////////////////
 /*
