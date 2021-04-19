@@ -113,6 +113,10 @@ let blueProducts = saleProducts.filter((e)=>{
   }
 })
 
+// const blueProducts = saleProducts.filter((e) => {
+//   return e.color.includes('blue')
+// })
+
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
